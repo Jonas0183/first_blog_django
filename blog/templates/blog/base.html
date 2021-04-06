@@ -1,0 +1,16 @@
+{% load static %}
+<html>
+    <head>
+        <title>Blog</title>
+        <link rel=StyleSheet href="{% static 'css/style.min.css' %}" >
+    </head>
+    <body>
+        <div class=" bg-gray-300">
+            <div class="pt-10">
+                <h1 class="text-4xl font-semibold text-blue-900 text-center "><a href="/">Mi Primer Blog con Django</a></h1>
+            </div>
+            {% block content %}
+            {% endblock %}
+        </div>
+</body>
+</html>
